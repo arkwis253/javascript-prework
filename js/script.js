@@ -66,12 +66,12 @@ buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); });
  * która jako argumenty przyjmuje ruch gracza oraz komputera
  * i wyświetla końcowy wynik runy  
  */
-function buttonClicked(playerMove) {
+function buttonClicked(argPlyerMove) {
     clearMessages();
-    console.log(playerMove + ' został kliknięty');
+    console.log(argPlayerMove + ' został kliknięty');
     const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('wylosowana liczba to: ' + randomNumber);
     const computerMove = getMoveName(randomNumber);
     console.log('ruch komputera to: ' + computerMove);
-    displayResult(playerMove, computerMove);
+    displayResult(argPlayerMove, computerMove);
 }
